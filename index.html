@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game">
+        
+        <h1>Simon Says Game</h1>
+        <h2>Press any key to start the game</h2>
+        
+        <div class="btn-container">
+            
+            <div class="btn-1">
+                <div class="btn red" type="button" id="red"></div>
+                <div class="btn yellow" type="button" id="yellow"></div>
+            </div>
+            
+            <div class="btn-2">
+                <div class="btn green" type="button" id="green"></div>
+                <div class="btn purple" type="button" id="purple"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rules">
+        <h1>How to Play:</h1>
+        <h3>Starting the Game:</h3>
+
+        <ul>
+            <li>Turn on the Simon game.</li>
+            <li>The game will randomly light up one of the four colored buttons</li>
+        </ul>
+
+        <h3>Repeating the Sequence:</h3>
+        <ul>
+            <li>After the game shows the sequence, your task is to press the buttons in the same order.</li>
+            <li>If you successfully repeat the sequence, the game will add another light to the sequence.</li>
+        </ul>
+
+        <h3>Increasing Difficulty:</h3>
+
+        <ul>
+            <li>The game continues to add one new light to the sequence each round.</li>
+            <li>Your task is to remember and repeat the entire sequence, which grows longer each round.</li>
+        </ul>
+
+        <h3>Making a Mistake:</h3>
+        <ul>
+            <li>If you press the buttons in the wrong order, the game will over</li>
+        </ul>
+
+        <h3>Winning:</h3>
+        <ul>
+            <li>The game usually continues until the sequence becomes too long to remember, or until you make a mistake. Some versions might have a predefined length to reach to win.</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
