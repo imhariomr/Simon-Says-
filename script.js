@@ -6,12 +6,18 @@ let h2 = document.querySelector('h2');
 let started = false;
 let level = 0;
 
-document.addEventListener("keypress",()=>{
+
+
+const startgame = ()=>{
     if(started==false){
         started = true;
         setTimeout(levelup(),2000);
     }
-})
+}
+
+
+document.addEventListener("keypress",startgame);
+document.addEventListener("touchstart",startgame);
 
 const btnflash = (btn)=>{
     btn.classList.add("flash");
@@ -56,6 +62,7 @@ function btnpress(){
 let allbtns = document.querySelectorAll(".btn");
 for(btn of allbtns){
     btn.addEventListener("click",btnpress);
+    btn.addEventListener("touchstart", btnpress);
 }
 
 function reset(){
