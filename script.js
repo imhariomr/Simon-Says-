@@ -26,6 +26,13 @@ const btnflash = (btn)=>{
     },250);
 }
 
+const userflash = (btn)=>{
+    btn.classList.add("userflash");
+    setTimeout(()=>{
+        btn.classList.remove("userflash");
+    },250);
+}
+
 const levelup = ()=>{
     userSeq = [];   
     level++;
@@ -51,7 +58,7 @@ function checkAns(idx){
 }
 function btnpress(){
     let btn  = this;
-    btnflash(btn);
+    userflash(btn);
     usercolor = btn.getAttribute("id");
     userSeq.push(usercolor);
 
@@ -62,7 +69,6 @@ function btnpress(){
 let allbtns = document.querySelectorAll(".btn");
 for(btn of allbtns){
     btn.addEventListener("click",btnpress);
-    btn.addEventListener("touchstart", btnpress);
 }
 
 function reset(){

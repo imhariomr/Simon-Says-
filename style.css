@@ -39,6 +39,10 @@ body{
     background-color: whitesmoke;
 }
 
+.userflash{
+    background-color: green;
+}
+
 .rules{
     margin: 3rem;
 }
